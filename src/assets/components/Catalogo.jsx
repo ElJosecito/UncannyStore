@@ -1,8 +1,17 @@
 import React from 'react'
+import Items from './Items'
 
 function Catalogo() {
+
+
+
+
   return (
-    <div>Catalogo</div>
+    <>
+        <section>
+      
+        </section>
+    </>
   )
 }
 
