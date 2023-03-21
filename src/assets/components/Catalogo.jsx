@@ -1,7 +1,7 @@
 import React from 'react'
 import Items from './Items'
 
-function Catalogo() {
+function Catalogo({data}) {
 
 
 
@@ -9,7 +9,11 @@ function Catalogo() {
   return (
     <>
         <section>
-      
+        {
+       data.map((respon) => {
+        return (<Items key={respon.id} title={respon.title} description={respon.description} rating={respon.rating.rate} img={respon.image} price={respon.price} />)
+      })
+      } 
         </section>
     </>
   )

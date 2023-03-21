@@ -2,17 +2,17 @@ import Catalogo from "./assets/components/Catalogo";
 import Login from "./assets/components/Login";
 import Items from "./assets/components/Items";
 // import {AxiosApi} from "./assets/Hooks/AxiosApi.js"
-import axios from "axios";
+import Axios from "axios";
 import { useEffect, useState } from "react";
 function App() {
-  const [data, setData] = useState(null);
+  const [data, setData] = useState([]);
 
   useEffect(() => {
-    const fetchData = async() => {
-      const algo = await axios
-        .get("https://pokeapi.co/api/v2/pokemon/")
+    const fetchData =() => {
+      Axios
+        .get("https://fakestoreapi.com/products")
         .then((res) => {
-          console.log(res.data);
+          setData(res.data);
         })
         .catch(function (error) {
           // handle error
@@ -21,10 +21,6 @@ function App() {
         .finally(function () {
           // always executed
         });
-
-        return algo
-
-      // fetch().then((res) => res.json()).then((data) = data)
     }
 
     fetchData();
@@ -32,9 +28,7 @@ function App() {
   return (
     <div className="App">
       <h1 className="text-3xl font-bold">Uncanny Store!</h1>
-      {/* {data.map((res) => {
-        return <Items key={res.id} titulo={res.title} />;
-      })} */}
+      <Catalogo data={data}/>
     </div>
   );
 }

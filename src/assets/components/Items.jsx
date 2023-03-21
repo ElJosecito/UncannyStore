@@ -1,8 +1,15 @@
 import React from 'react'
 
-function Items({titulo}) {
+function Items({title, img, price, description, rating}) {
   return (
-    <div>{titulo}</div>
+    <div>
+      <img src={img} alt={title} />
+      <h2>
+        {price}
+      </h2>
+      <p>{description}</p>
+      <h4>{rating}</h4>
+    </div>
   )
 }
 
