@@ -2,8 +2,9 @@ import React from 'react'
 
 function Header() {
   return (
-    <div className='flex items-center justify-between w-full h-16  pl-10 pr-10 z-50 fixed'>
-        <h2 className='text-2xl font-extrabold '>Uncanny</h2>
+    <div className='flex items-center justify-between w-full h-16  pl-10 pr-10 z-50 fixed bg-white'>
+        <h2 className='text-2xl font-extrabold'>Uncanny</h2>
+        
         <ul className='w-80 flex items-center justify-between text-base font-bold '>
             <li>Home</li>
             <li>Products</li>
