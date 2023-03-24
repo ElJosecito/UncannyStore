@@ -45,7 +45,7 @@ function Hero() {
               height="100%"
               transform="translate(50 50)"
               strokeWidth="0"
-              style={{ transition: "all 0.3s ease 0s;" }}
+              style={{ transition: "all 0.3s ease 0s" }}
               stroke="url(#sw-gradient)"
             ></path>
           </svg>

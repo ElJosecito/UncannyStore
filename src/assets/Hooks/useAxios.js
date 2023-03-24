@@ -6,7 +6,11 @@ export const useAxios = (url) => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    Axios.get(url)
+    Axios.get(url,{
+      headers: {
+        'Access-Control-Allow-Origin': true,
+      },
+      })
       .then((res) => {
         setData(res.data);
       })

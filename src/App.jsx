@@ -5,13 +5,13 @@ import { useAxios } from "./assets/Hooks/useAxios";
 
 function App() {
 
-  const {data} = useAxios("https://fakestoreapi.com/products")
+  const {data} = useAxios("https://fakestoreapi.com/products");
 
   return (
     <>
     <Header/>
     <Hero/>
-      <Catalogo data={data}/>
+    <Catalogo data={data}/>
     </>
   );
 }

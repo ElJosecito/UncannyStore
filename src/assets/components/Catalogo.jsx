@@ -16,7 +16,7 @@ function Catalogo({ data }) {
               img={respon.image}
               price={respon.price}
             />
-          );
+          )
         })}
         </div>
       </section>
