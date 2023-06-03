@@ -4,7 +4,7 @@ import women from "../images/women.png";
 function Hero() {
   return (
     <div className="w-full min-h-screen h-fit flex justify-center">
-      <div className="max-w-screen-xl w-full bg-white xl:flex-row flex-col flex justify-between items-center">
+      <div className="max-w-screen-xl w-full bg-white lg:flex-row flex-col flex justify-between items-center">
         <div className="w-[40rem] h-full flex flex-col justify-center items-start ml-10 mt-28 xl:mt-0">
           <h1 className="font-mono text-6xl font-semibold">
             Best Place to buy
@@ -22,7 +22,7 @@ function Hero() {
           </button>
         </div>
 
-        <div className="w-[35rem] xl:relative max-h-screen hidden xl:block">
+        <div className="w-[35rem] lg:relative max-h-screen hidden lg:block">
           <img src={women} alt="" className="w-96 absolute top-10 left-12" />
           {/* <div>
                 <button className="bg-blue-600 text-slate-100 m-1 p-2 pl-5 pr-5 rounded-md absolute top-60 left-80">Start Shopping</button>
