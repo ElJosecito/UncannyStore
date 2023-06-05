@@ -4,20 +4,20 @@ import women from "../images/women.png";
 function Hero() {
   return (
     <div className="w-full min-h-screen h-fit flex justify-center">
-      <div className="max-w-screen-xl w-full bg-white lg:flex-row flex-col flex justify-between items-center">
-        <div className="w-[40rem] h-full flex flex-col justify-center items-start ml-10 mt-28 xl:mt-0">
-          <h1 className="font-mono text-6xl font-semibold">
+      <div className="max-w-screen-xl w-full lg:flex-row flex-col flex justify-between items-center">
+        <div className="md:w-[40rem] md:pr-3 h-full flex flex-col justify-center items-start mt-28 xl:mt-0">
+          <h1 className="font-mono sm:text-6xl text-5xl font-semibold">
             Best Place to buy
             <br />
             <span className="font-extrabold text-blue-600">Everything</span>
           </h1>
-          <p className="font-sans font-light mt-5 w-[28rem]">
+          
+          <p className="font-sans font-light mt-5 md:text-base text-sm ">
             At Uncanny Store you can shop whatever you think at very accesible
             prices, so... What do you think, Let's buy something!!
           </p>
 
-          <button className="bg-blue-600 text-slate-100 p-2 pl-5 pr-5 rounded-md mt-10">
-            {" "}
+          <button className="bg-blue-600 text-slate-100 p-2 pl-5 pr-5 rounded-md mt-10 md:self-start self-center">
             Shopping Now
           </button>
         </div>

@@ -1,36 +1,14 @@
-import Catalogo from "./assets/components/Catalogo";
-import Header from "./assets/components/Header";
-import Hero from "./assets/components/Hero";
-import HeaderLogged from "./assets/components/HeaderLogged";
-import { useState, useEffect } from "react";
-import { useAxios } from "./assets/Hooks/useAxios";
+import { Routes, Route } from "react-router-dom";
+import SubApp from "./SubApp";
+import Login from "./assets/components/Login";
 
 function App() {
-
-  let [boolean,Boolean] = useState([])
-
-  useEffect(() => {
-    Boolean(true)
-  }, [])
-  
-  const {data} = useAxios("https://fakestoreapi.com/products");
-  if(boolean){
-    return (
-      <>
-      <HeaderLogged/>
-      <Hero/>
-      <Catalogo data={data}/>
-      </>
-    );
-  }else{
-    return (
-      <>
-      <Header/>
-      <Hero/>
-      <Catalogo data={data}/>
-      </>
-    );
-  }
+  return(
+    <Routes>
+      <Route path="/" element={<SubApp/>}/>
+      <Route path="login" element={<Login/>}/>
+    </Routes>
+  )
   
 }
 
