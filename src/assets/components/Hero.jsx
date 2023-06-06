@@ -5,7 +5,7 @@ function Hero() {
   return (
     <div className="w-full min-h-screen h-fit flex justify-center">
       <div className="max-w-screen-xl w-full lg:flex-row flex-col flex justify-between items-center">
-        <div className="md:w-[40rem] md:pr-3 h-full flex flex-col justify-center items-start mt-28 xl:mt-0">
+        <div className="md:w-[40rem] md:pr-3 h-full flex flex-col justify-center items-start md:mt-28 xl:mt-0">
           <h1 className="font-mono sm:text-6xl text-5xl font-semibold">
             Best Place to buy
             <br />
